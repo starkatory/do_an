@@ -34,7 +34,7 @@ public class MusicAdapter extends ArrayAdapter<Music_Entity> {
         Music_Entity currentMusic = getItem(position);
         TextView txtSong,txtSinger;
         ImageView imgMusic;
-        txtSong = (TextView) convertView.findViewById(R.id.txt_song);
+        txtSong = (TextView) convertView.findViewById(R.id.txt_song_name);
         txtSinger = (TextView) convertView.findViewById(R.id.txt_singer);
         imgMusic = (ImageView) convertView.findViewById(R.id.img_music);
 

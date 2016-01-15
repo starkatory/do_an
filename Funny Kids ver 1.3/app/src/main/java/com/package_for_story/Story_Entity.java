@@ -73,11 +73,23 @@ public class Story_Entity implements Serializable{
         this.url = url;
     }
 
-    public Story_Entity(int id, String story, String reader,int image) {
+    public Story_Entity(int id, String story, String author, String reader, String time, int image, String url) {
+        this.id = id;
+        this.story = story;
+        this.author = author;
+        this.reader = reader;
+        this.time = time;
+        this.image = image;
+        this.url = url;
+    }
+
+    public Story_Entity(int id, String story, String reader, int image) {
         this.id = id;
         this.story = story;
         this.reader = reader;
         this.image = image;
     }
+
+
 }
 

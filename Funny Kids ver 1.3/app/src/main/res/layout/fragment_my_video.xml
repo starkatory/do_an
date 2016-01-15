@@ -1,28 +1,49 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.administrator.myapplication.MyVideo">
+    android:background="@drawable/chickenoscar"
+    android:orientation="vertical"
+    android:padding="10dp">
 
-    <!-- Layout chua My Video -->
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    <LinearLayout
+        android:layout_marginTop="10dp"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:layout_marginTop="30dp">
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
 
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="35dp"
+            android:src="@drawable/folder" />
 
-
-        <Button
-            android:layout_marginTop="10dp"
+        <TextView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="#FFFFFFFF"
-            android:text="Danh sach video da tai"
-            android:gravity="left"
-            android:textColor="#ed2727" />
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:text="Danh sách video đã tải"
+            android:id="@+id/dowloaded_video"
+            android:textSize="25dp"
+            android:textColor="#000000"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
 
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="35dp"
+            android:src="@drawable/folder" />
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="20dp"
+            android:text="Fovorite"
+            android:id="@+id/playlist_video"
+            android:textSize="25dp"
+            android:textColor="#000000"/>
     </LinearLayout>
 
-</FrameLayout>
+</LinearLayout>

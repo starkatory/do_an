@@ -16,6 +16,8 @@
             </intent-filter>
         </activity>
         <activity android:name="com.package_for_music.ListMusicActivity" />
+        <activity android:name="com.package_for_video.ListVideoActivity"></activity>
+        <activity android:name="com.package_for_learning.Learnning_Activity"></activity>
         <activity android:name="com.package_for_story.ListStoryActivity"></activity>
 
     </application>
